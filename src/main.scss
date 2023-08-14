@@ -1,0 +1,13 @@
+$DesaturatedDarkCyan: hsl(180, 29%, 50%);
+$LightGrayishBackground: hsl(180, 52%, 96%);
+$LightGrayishCyanFilterTablets: hsl(180, 31%, 95%);
+$DarkGrayishCyan: hsl(180, 8%, 52%);
+$VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.bg-header {
+    background: hsl(180, 29%, 50%);
+}
