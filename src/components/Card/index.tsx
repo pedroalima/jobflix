@@ -1,11 +1,12 @@
 import { JobsData } from "../../types";
 import data from "../../utils/data";
+import "./index.scss";
 
 function Card() {
 	return (
 		<div>
 			{data.map((job: JobsData) => (
-				<div className="card" key={job.id}>
+				<div className="card py-3 my-5 shadow border-top-0 border-right-0 border-bottom-0 rounded" id={job.featured ? "card" : ""} key={job.id}>
 					<img src={job.logo} className="card-img-top" alt="Logo" />
 					<div className="card-body">
 						<h5 className="card-title">{job.company}</h5>
