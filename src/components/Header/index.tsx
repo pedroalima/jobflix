@@ -5,7 +5,7 @@ function Header() {
 		<header className="container bg-header" id="header">
 			<div className="row">
 				<div className="col">
-					<h1></h1>
+					
 				</div>
 			</div>
 		</header>

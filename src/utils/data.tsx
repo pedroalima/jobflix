@@ -1,8 +1,24 @@
-const data = [
+interface JobsData {
+	id: number;
+	company: string;
+	logo: string;
+	new: boolean;
+	featured: boolean;
+	position: string;
+	role: string;
+	level: string;
+	postedAt: string;
+	contract: string;
+	location: string;
+	languages: string[];
+	tools: string[];
+}
+
+const data: JobsData[] = [
 	{
 		id: 1,
 		company: "Photosnap",
-		logo: "./images/photosnap.svg",
+		logo: "../../public/images/photosnap.svg",
 		new: true,
 		featured: true,
 		position: "Senior Frontend Developer",
@@ -12,12 +28,12 @@ const data = [
 		contract: "Full Time",
 		location: "USA Only",
 		languages: ["HTML", "CSS", "JavaScript"],
-		tools: []
+		tools: [],
 	},
 	{
 		id: 2,
 		company: "Manage",
-		logo: "./images/manage.svg",
+		logo: "../../public/images/manage.svg",
 		new: true,
 		featured: true,
 		position: "Fullstack Developer",
@@ -27,12 +43,12 @@ const data = [
 		contract: "Part Time",
 		location: "Remote",
 		languages: ["Python"],
-		tools: ["React"]
+		tools: ["React"],
 	},
 	{
 		id: 3,
 		company: "Account",
-		logo: "./images/account.svg",
+		logo: "../../public/images/account.svg",
 		new: true,
 		featured: false,
 		position: "Junior Frontend Developer",
@@ -42,12 +58,12 @@ const data = [
 		contract: "Part Time",
 		location: "USA Only",
 		languages: ["JavaScript"],
-		tools: ["React", "Sass"]
+		tools: ["React", "Sass"],
 	},
 	{
 		id: 4,
 		company: "MyHome",
-		logo: "./images/myhome.svg",
+		logo: "../../public/images/myhome.svg",
 		new: false,
 		featured: false,
 		position: "Junior Frontend Developer",
@@ -57,12 +73,12 @@ const data = [
 		contract: "Contract",
 		location: "USA Only",
 		languages: ["CSS", "JavaScript"],
-		tools: []
+		tools: [],
 	},
 	{
 		id: 5,
 		company: "Loop Studios",
-		logo: "./images/loop-studios.svg",
+		logo: "../../public/images/loop-studios.svg",
 		new: false,
 		featured: false,
 		position: "Software Engineer",
@@ -77,7 +93,7 @@ const data = [
 	{
 		id: 6,
 		company: "FaceIt",
-		logo: "./images/faceit.svg",
+		logo: "../../public/images/faceit.svg",
 		new: false,
 		featured: false,
 		position: "Junior Backend Developer",
@@ -87,12 +103,12 @@ const data = [
 		contract: "Full Time",
 		location: "UK Only",
 		languages: ["Ruby"],
-		tools: ["RoR"]
+		tools: ["RoR"],
 	},
 	{
 		id: 7,
 		company: "Shortly",
-		logo: "./images/shortly.svg",
+		logo: "../../public/images/shortly.svg",
 		new: false,
 		featured: false,
 		position: "Junior Developer",
@@ -102,12 +118,12 @@ const data = [
 		contract: "Full Time",
 		location: "Worldwide",
 		languages: ["HTML", "JavaScript"],
-		tools: ["Sass"]
+		tools: ["Sass"],
 	},
 	{
 		id: 8,
 		company: "Insure",
-		logo: "./images/insure.svg",
+		logo: "../../public/images/insure.svg",
 		new: false,
 		featured: false,
 		position: "Junior Frontend Developer",
@@ -117,12 +133,12 @@ const data = [
 		contract: "Full Time",
 		location: "USA Only",
 		languages: ["JavaScript"],
-		tools: ["Vue", "Sass"]
+		tools: ["Vue", "Sass"],
 	},
 	{
 		id: 9,
 		company: "Eyecam Co.",
-		logo: "./images/eyecam-co.svg",
+		logo: "../../public/images/eyecam-co.svg",
 		new: false,
 		featured: false,
 		position: "Full Stack Engineer",
@@ -132,12 +148,12 @@ const data = [
 		contract: "Full Time",
 		location: "Worldwide",
 		languages: ["JavaScript", "Python"],
-		tools: ["Django"]
+		tools: ["Django"],
 	},
 	{
 		id: 10,
 		company: "The Air Filter Company",
-		logo: "./images/the-air-filter-company.svg",
+		logo: "../../public/images/the-air-filter-company.svg",
 		new: false,
 		featured: false,
 		position: "Front-end Dev",
@@ -147,7 +163,7 @@ const data = [
 		contract: "Part Time",
 		location: "Worldwide",
 		languages: ["JavaScript"],
-		tools: ["React", "Sass"]
+		tools: ["React", "Sass"],
 	}
 ];
 
